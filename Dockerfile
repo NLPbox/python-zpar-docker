@@ -1,5 +1,5 @@
 
-FROM nlpbox/nlpbox-base
+FROM nlpbox/nlpbox-base:16.04
 
 RUN apt-get install -y python3 python3-pip && \
     pip3 install six
