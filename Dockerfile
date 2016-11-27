@@ -1,7 +1,8 @@
 
 FROM nlpbox/nlpbox-base:16.04
 
-RUN apt-get install -y python3 python3-pip && \
+RUN apt-get update -y && apt-get upgrade -y && \
+    apt-get install -y python3 python3-pip && \
     pip3 install six
 
 WORKDIR /opt
